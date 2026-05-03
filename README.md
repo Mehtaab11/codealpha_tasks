@@ -21,7 +21,7 @@ This repository contains the tasks completed during my **Web Development Interns
 
 | Task # | Task Name      | Description                                     | Tech Stack            | Link                                |
 | :----: | :------------- | :---------------------------------------------- | :-------------------- | :---------------------------------- |
-|   01   | Age Calculator | Calculates the exact age based on Date of Birth | HTML, CSS, JavaScript | [View Task](./Task1-Age-Calculator) |
+|   01   | Age Calculator | Calculates the exact age based on Date of Birth | HTML, CSS, JavaScript | [View Task](./task1) |
 
 ---
 
