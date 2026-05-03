@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="bg-grid"></div>
+
+  <main>
+    <div class="card">
+      <div class="card-header">
+        <div class="icon">Mehtab's</div>
+        <h1>Age Calculator</h1>
+        <p>Enter your date of birth to discover your exact age</p>
+      </div>
+
+      <div class="form-section">
+        <label class="section-label">Date of Birth</label>
+        <div class="input-row">
+          <div class="field">
+            <input type="number" id="day" placeholder="DD" min="1" max="31" />
+            <span class="field-label">Day</span>
+          </div>
+          <div class="field">
+            <select id="month">
+              <option value="">MM</option>
+              <option value="1">01 — Jan</option>
+              <option value="2">02 — Feb</option>
+              <option value="3">03 — Mar</option>
+              <option value="4">04 — Apr</option>
+              <option value="5">05 — May</option>
+              <option value="6">06 — Jun</option>
+              <option value="7">07 — Jul</option>
+              <option value="8">08 — Aug</option>
+              <option value="9">09 — Sep</option>
+              <option value="10">10 — Oct</option>
+              <option value="11">11 — Nov</option>
+              <option value="12">12 — Dec</option>
+            </select>
+            <span class="field-label">Month</span>
+          </div>
+          <div class="field">
+            <input type="number" id="year" placeholder="YYYY" min="1900" max="2025" />
+            <span class="field-label">Year</span>
+          </div>
+        </div>
+
+        <p class="error-msg" id="error"></p>
+
+        <button id="calc-btn" onclick="calculate()">
+          <span>Calculate Age</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+      <div class="result" id="result">
+        <div class="result-divider">
+          <span>Your Age</span>
+        </div>
+        <div class="metrics">
+          <div class="metric">
+            <span class="metric-num" id="r-years">0</span>
+            <span class="metric-lbl">Years</span>
+          </div>
+          <div class="metric-sep"></div>
+          <div class="metric">  
+            <span class="metric-num" id="r-months">0</span>
+            <span class="metric-lbl">Months</span>
+          </div>
+          <div class="metric-sep"></div>
+          <div class="metric">
+            <span class="metric-num" id="r-days">0</span>
+            <span class="metric-lbl">Days</span>
+          </div>
+        </div>
+        <div class="result-footer">
+          <p id="dob-display"></p>
+          <p id="next-bday"></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
